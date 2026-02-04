@@ -1,4 +1,6 @@
 ---
+const pageTitle = "Home";
+import Header from '../Components/Header.astro';
 ---
 <html lang="en">
 	<head>
@@ -6,9 +8,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Tai Hopkins</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<h1>Tai Hopkins</h1>
+		<Header />
+		<h1>{pageTitle}</h1>
 	</body>
 </html>
