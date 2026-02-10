@@ -1,9 +1,23 @@
 ---
+const pageTitle = "BullsEye";
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Welcome to My Website";
 ---
+<BaseLayout pageTitle = {pageTitle}>
+    <!-- astro <slot /> -->
+	
+	<h1>
+		About Me
+	</h1>
+	
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	</p>
+	
+	<h1>
+		Skills
+	</h1>
+	
+	<sections>
 
-<BaseLayout {pageTitle}={pageTitle}>
-	<!-- astro <slot /> -->
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	</sections>
 </BaseLayout>
