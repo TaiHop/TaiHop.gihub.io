@@ -7,7 +7,7 @@
 - src/components/Header.astro:
   - description: "Header partial exists"
     check: ConfirmFileExists
-- src/layouts/BaseLayout.astro:
+- src/Layouts/BaseLayout.astro:
   - description: "Base layout exists"
     check: ConfirmFileExists
 - src/pages/index.astro:
