@@ -1,77 +1,78 @@
 ---
 const pageTitle = "Landing Page";
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Footer from '../components/Footer.astro';
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
 	<head>
-	<style>
-		.about-heading {
-			font-size: 2.5em;
-			color: #333;
-		}
-		.skills-table {
-			border-collapse: collapse;
-		}
-		.skills-table td {
-			border: 2px solid #ddd;
-			padding: 8px;
-			text-align: center;
-		}
-	</style>
+		<style>
+			.about-heading {
+				font-size: 2.5em;
+				color: #222222;
+			}
+			.skills-table {
+				border-collapse: collapse;
+			}
+			.skills-table td {
+				border: 2px solid #ddd;
+				padding: 8px;
+				text-align: center;
+			}
+		</style>
 	</head>
-	<h2 class="about-heading" style="text-align: center; margin-top: 20px;">
-		About Me
-	</h2>
+	<body>
+		<h2 class="about-heading" style="text-align: center; margin-top: 20px;">
+			About Me
+		</h2>
 	
-	<p style="text-align: justify; margin: 20px;">
+		<p style="text-align: justify; margin: 20px; border: 2px solid #222222; padding: 20px; border-radius: 5px;">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	</p>
+		</p>
 	
-	<h3 style="text-align: center; margin-top: 30px;">
+		<h3 style="text-align: center; margin-top: 30px;">
 		Skills
-	</h3>
+		</h3>
 
-	<table class="skills-table" style="width: 75%; margin: 0 auto;">
-		<tr>
-			<td>Python</td>
-			<td>SQLite</td>
-			<td>R</td>
-			<td>HTML</td>
-			<td>C</td>
-			<td>CSS</td>
-		</tr>
-	</table>
+		<table class="skills-table" style="width: 75%; margin: 0 auto;">
+			<tr>
+				<td>Python</td>
+				<td>SQLite</td>
+				<td>R</td>
+				<td>HTML</td>
+				<td>C</td>
+				<td>CSS</td>
+			</tr>
+		</table>
 	
-	<figure style="text-align: center; margin-top: 20px;">
- 		<img src="src/img/python-html.png" alt="Python Logo" width="25" height="25">
-		<img src="src/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25">
-		<img src="src/img/r-icon.webp" alt="R Logo" width="25" height="25">
-		<img src="src/img/html-logo.jpg" alt="HTML Logo" width="25" height="25">
-		<img src="src/img/c-icon.jpg" alt="C Logo" width="25" height="25">
-		<img src="src/img/css-logo.jpg" alt="CSS Logo" width="25" height="25">
-	</figure>
+		<figure style="text-align: center; margin-top: 20px;">
+ 			<img src="src/img/python-html.png" alt="Python Logo" width="25" height="25">
+			<img src="src/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25">
+			<img src="src/img/r-icon.webp" alt="R Logo" width="25" height="25">
+			<img src="src/img/html-logo.jpg" alt="HTML Logo" width="25" height="25">
+			<img src="src/img/c-icon.jpg" alt="C Logo" width="25" height="25">
+			<img src="src/img/css-logo.jpg" alt="CSS Logo" width="25" height="25">
+		</figure>
+	
+		<section></section>
 
-	<h4 style="text-align: center; margin-top: 20px;">
-		Projects
-	</h4>
+		<h3 style="text-align: center; margin-top: 20px;">
+			Projects
+		</h3>
 
-<div class="projects-container;" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px ;">
-    <section style="border: 2px solid #333; padding: 10px; border-radius: 5px;"> 
-		<h5>DataSeekr</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
-    <section style="border: 2px solid #333; padding: 10px; border-radius: 5px;">
-        <h5>PC-Crasher</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
-	<section style="border: 2px solid #333; padding: 10px; border-radius: 5px;">
-        <h5>Insert Project</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
-</div>
-
-<Footer/>
-
+		<div class="projects-container;" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px ;">
+    		<section style="border: 2px solid #222222; padding: 10px; border-radius: 5px;"> 
+				<h5>DataSeekr</h5>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    		</section>
+    		<section style="border: 2px solid #222222; padding: 10px; border-radius: 5px;">
+        		<h5>PC-Crasher</h5>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    		</section>
+			<section style="border: 2px solid #222222; padding: 10px; border-radius: 5px;">
+        		<h5>Insert Project</h5>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    		</section>
+		</div>
+	</body>
 </BaseLayout>
+
