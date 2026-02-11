@@ -130,7 +130,7 @@ th, td {
 }
 
 .full__purple_band :is(h1, h2, h3, h4, h5, h6) {
-    color: #9d7dee;
+    color: #fff;
 }
 
 .full__purple_band p {
