@@ -91,6 +91,7 @@ article p {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: "Times New Roman";
 }
 
 blockquote {
