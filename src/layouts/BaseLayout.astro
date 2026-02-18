@@ -2,7 +2,6 @@
 const { pageTitle } = Astro.props;
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Project from '../components/Project.astro';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +20,7 @@ import Project from '../components/Project.astro';
 			
 			<h1>{pageTitle}</h1>
 			<slot />
-			<Project />
-			<Project />
-			<Project />
+
 		
 		
 		

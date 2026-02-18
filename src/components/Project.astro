@@ -1,15 +1,16 @@
 ---
+const { projectName, projectLink } = Astro.props
 ---
 
 <div class="project container">
     <project>
         <h2 class="project-title">
-            Project Title
+            {projectName}
         </h2>
         <p class="project-description">
-            This is a brief description of the project. It highlights the main features and technologies used.
-        </p>
-        <a href="#" class="project-link">
+           <slot />
+        </p>{
+        <a href={projectLink} class="project-link">
             View Project
         </a>
     </project>

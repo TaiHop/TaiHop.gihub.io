@@ -1,7 +1,7 @@
 ---
 const pageTitle = "Home";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import Project from '../components/Project.astro';
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
@@ -48,7 +48,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		<section>
 			<p>Infomation about skills</p> 
 		</section>
-
+			<Project projectName = "Lorem" projectLink = "https://google.com">
+				<ul>
+					<li>Point 1</li>
+					<li>Point 2</li>
+					<li>Point 3</li>
+				</ul>
+			</Project>
+			<Project />
+			<Project />
 	</div>
 </BaseLayout>
 
