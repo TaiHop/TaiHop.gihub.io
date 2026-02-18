@@ -1,11 +1,14 @@
 :root{
-    --webco-purple: #673E7A;
-    --webco-cream: #F2F1DC;
+    --webco-purple: #432194;
+    --webco-grey: #D9D9D9;
+    --webco-printer-black: #222;
+    --webco-white: #fff;
 }
 
 ::selection {
-    background: var(--webco-cream);
-    color: #222;
+    background: var(--webco-grey);
+    color: var(--webco-white);
+
 }
 
 * {
@@ -15,7 +18,7 @@
 }
 
 ul, li, i, b, em, strong {
-    color: var(--webco-cream);
+    color: var(--webco-grey);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +38,7 @@ html {
 }
 
 header {
-    background: var(--webco-cream);
+    background: var(--webco-grey);
     height: 3rem;
     align-items: center;
     display: grid;
@@ -44,7 +47,7 @@ header {
 }
 
 header strong {
-    color: #222;
+    color: var(--webco-printer-black);
 }
 
 nav {
@@ -69,7 +72,7 @@ body {
 }
 
 footer {
-    background: var(--webco-cream);
+    background: var(--webco-grey);
     height: 6rem;
     align-content: center;
 }
@@ -101,11 +104,11 @@ article p {
 
 blockquote {
     padding-left: 1rem;
-    border-left: 3px solid var(--webco-cream);
+    border-left: 3px solid var(--webco-grey);
 }
 
 th, td {
-    border: 1px solid var(--webco-cream);
+    border: 1px solid var(--webco-grey);
 }
 
 #search {
@@ -136,11 +139,11 @@ th, td {
 }
 
 .full__purple_band :is(h1, h2, h3, h4, h5, h6) {
-    color: var(--webco-cream);
+    color: var(--webco-white);
 }
 
 .full__purple_band p {
-    color: var(--webco-cream);
+    color: var(--webco-grey);
 }
 
 .input__rounded {
@@ -153,7 +156,7 @@ th, td {
 }
 
 .article__border_right:not(:last-of-type) {
-    border-right: 1px dashed #222;
+    border-right: 1px dashed var(--webco-grey);
 }
 
 .gap__3_rem {
