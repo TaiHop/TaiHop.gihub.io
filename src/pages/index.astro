@@ -5,36 +5,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
-	<style>
-		.about-heading {
-			font-size: 2.5em;
-			color: #222222;
-		}
-		.skills-table {
-			border-collapse: collapse;
-			border-radius: 5px
-		}
-		.skills-table td {
-			border: 2px solid #222222;
-			padding: 8px;
-			text-align: center
-		}
-		
-	</style>
 	
-
 	<section>
-		<div>
-			<h2 class="about-heading" style="text-align: center; margin-top: 20px;">
+		<div style="text-align: center; margin-top: 20px;">
+			<h2 class="about-heading;">
 				All About Me
 			</h2>
 			<div>
-				<img 
-				src ="/img/profile-pic.jpg" 
-				alt ="Profile Picture; centered"
-				class = profile-pic
-				style="centered"
-				/>
+				<img src ="/img/profile-pic.jpg" alt ="Profile Picture" class = "profile-pic"/>
 				
 				<p style="text-align: justify; margin: 20px; border: 2px solid #222222; padding: 20px; border-radius: 5px;">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -57,15 +35,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 				<td>CSS</td>
 			</tr>
 		</table>
-	
-		<img 
-			src="/img/python-html.png" 
-			alt="Python Logo" 
-			width="25" 
-			height="25"/>
 
 		<figure style="text-align: center; margin-top: 20px;">
- 			
+ 			<img src="/img/python-html.png" alt="Python Logo" width="25" height="25"/>
 			<img src="/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
 			<img src="/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
 			<img src="/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
@@ -77,26 +49,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			<p>Infomation about skills</p> 
 		</section>
 
-		<h3 style="text-align: center; margin-top: 20px;">
-			Projects
-		</h3>
-
-		<div class="projects-container;" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px ;">
-    		<section style="border: 2px solid #222222; padding: 10px; border-radius: 5px;"> 
-				<h5>DataSeekr</h5>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    		</section>
-    		<section style="border: 2px solid #222222; padding: 10px; border-radius: 5px;">
-        		<h5>PC-Crasher</h5>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    		</section>
-			<section>
-				<article style="border: 2px solid #222222; padding: 10px; border-radius: 5px;">
-        			<h5>Insert Project</h5>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-				</article>
-    		</section>
-		</div>
 	</div>
 </BaseLayout>
 
