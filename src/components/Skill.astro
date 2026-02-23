@@ -1,0 +1,12 @@
+---
+const { img, alt, skill, value } = Astro.props;
+---
+<div class="skill">
+    <img src={img} alt={alt} width="25" height="25"/>
+    <p style = "text-align: center;">
+        {skill}
+    </p>
+    <div class="skill-bar">
+        <progress max = "100" value = "{value}">{value}</progress>
+    </div>
+</div>

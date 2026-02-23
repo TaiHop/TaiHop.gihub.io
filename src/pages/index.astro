@@ -1,9 +1,8 @@
 ---
 const pageTitle = "Home";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Project from
-
-		 '../components/Project.astro';
+import Skill from '../components/Skill.astro';
+import Project from '../components/Project.astro';
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
@@ -28,16 +27,12 @@ import Project from
 	</h2>
 	<div class="skills-container">
 		<!-- Skill 1 -->
-		<div class="skill">
-			<p style = "text-align: center;">
-				Python
-			</p>
-			<div class="skill-bar">
-				<div class="progress python" style = "width: 90%; background-color: var(--fifth-color);">
-					90%
-				</div>
-			</div>
-		</div>
+		<Skill 
+			img = "/img/python-html.png" 
+			alt = "Python logo" 
+			skill = "Python"
+			value = 70
+		/>
 		<div class="skill">
 			<p style = "text-align: center;">
 				HTML
