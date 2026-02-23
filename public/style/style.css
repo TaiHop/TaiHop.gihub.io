@@ -68,7 +68,7 @@ margin-bottom: 1rem;
 display: flex;
 flex: 3;
 flex-direction: row;
-column-gap: 3rem;
+column-gap: 1.38rem;
 }
 
 .skill p {
@@ -89,10 +89,7 @@ font-weight: bold;
 
 /* Skill Bar Container */
 .skill-bar {
-width: 100%;
-background-color: var(--third-color);
-border-radius: 5px;
-overflow: hidden
+border-radius: 10px;
 }
 
 /* Progress Bar */
@@ -100,5 +97,12 @@ progress {
 text-align: right;
 padding: 10px;
 border-radius: 5px;
+}
+
+.full__three_column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    margin: 1rem;
 }
 
