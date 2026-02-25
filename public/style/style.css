@@ -187,11 +187,40 @@ form {
   background: var(--third-color);
   margin: 0 auto;
 }
-.contact {
+.contact-section {
     
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 400px;  
 
+}
+.contact-section h2 {
+    text-align: center;
+    color: var(--third-color);
+}
+.contact-section input {
+    text-align: center;
+    padding: auto;
+    margin-top: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+.contact-section button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-sub {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-right: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
 }
