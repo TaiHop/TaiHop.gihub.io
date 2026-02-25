@@ -11,77 +11,84 @@ import AboutMe from '../components/AboutMe.astro';
 	<AboutMe>
 		Hello! I'm Tai, a passionate programmer with a love for coding and problem-solving. I have experience in various programming languages and enjoy creating innovative solutions to real-world challenges. With a strong background in software development, I am always eager to learn new technologies and expand my skill set. I thrive in collaborative environments and am dedicated to delivering high-quality work.
 	</AboutMe>
-	<h2 style="text-align: center; margin-top: 30px;">
-		My Skills
-	</h2>
-	<div class="skills-container">
-		<Skill 
-			img = "/img/python-html.png" 
-			alt = "Python logo" 
-			skill = "Python"
-			value = 70
-		/>
-		<Skill 
-			img = "/img/html-logo.jpg" 
-			alt = "HTML logo" 
-			skill = "HTML"
-			value = 50
-		/>
-		<Skill 
-			img = "/img/css-logo.jpg" 
-			alt = "CSS logo" 
-			skill = "CSS"
-			value = 75
-		/>
-		<Skill 
-			img = "/img/sqlite-icon.webp" 
-			alt = "SQLite logo" 
-			skill = "SQLite"
-			value = 72
-		/>
-		<Skill 
-			img = "/img/r-icon.webp" 
-			alt = "R logo" 
-			skill = "R"
-			value = 60
-		/>
-		<Skill 
-			img = "/img/c-icon.jpg" 
-			alt = "C logo" 
-			skill = "C"
-			value = 45
-		/>
-	</div>
-
-	<figure style="text-align: center; margin-top: 20px;">
- 		<img src="/img/python-html.png" alt="Python Logo" width="25" height="25"/>
-		<img src="/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
-		<img src="/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
-		<img src="/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
-		<img src="/img/c-icon.jpg" alt="C Logo" width="25" height="25"/>
-		<img src="/img/css-logo.jpg" alt="CSS Logo" width="25" height="25"/>
-	</figure>
-		
-	<section style="text-align: center; margin-top: 30px;">
-		<h3>Projects</h3> 
+	<section>
+		<h2 style="text-align: center; margin-top: 30px;">
+			My Skills
+		</h2>
+		<div class="skills-container">
+			<Skill 
+				img = "/img/python-html.png" 
+				alt = "Python logo" 
+				skill = "Python"
+				value = 70
+			/>
+			<Skill 
+				img = "/img/html-logo.jpg" 
+				alt = "HTML logo" 
+				skill = "HTML"
+				value = 50
+			/>
+			<Skill 
+				img = "/img/css-logo.jpg" 
+				alt = "CSS logo" 
+				skill = "CSS"
+				value = 75
+			/>
+			<Skill 
+				img = "/img/sqlite-icon.webp" 
+				alt = "SQLite logo" 
+				skill = "SQLite"
+				value = 72
+			/>
+			<Skill 
+				img = "/img/r-icon.webp" 
+				alt = "R logo" 
+				skill = "R"
+				value = 60
+			/>
+			<Skill 
+				img = "/img/c-icon.jpg" 
+				alt = "C logo" 
+				skill = "C"
+				value = 45
+			/>
+		</div>	
 	</section>
+
+	<div class="gallery">
+		<figure style="text-align: center; margin-top: 20px;">
+ 			<img src="/img/python-html.png" alt="Python Logo" width="25" height="25"/>
+			<img src="/img/sqlite-icon.webp" alt="SQLite Logo" width="30" height="25"/>
+			<img src="/img/r-icon.webp" alt="R Logo" width="25" height="25"/>
+			<img src="/img/html-logo.jpg" alt="HTML Logo" width="25" height="25"/>
+			<img src="/img/c-icon.jpg" alt="C Logo" width="25" height="25"/>
+			<img src="/img/css-logo.jpg" alt="CSS Logo" width="25" height="25"/>
+		</figure>
+	</div>	
+	
+	<section>
+		<h3 style="text-align: center;">
+			Projects
+		</h3>
 			
-	<div class="full__three_column gap__3_rem">
-		<Project projectName = "DataSeekr" projectLink = "https://github.com/TaiHop/DataSeekr/tree/master">
-			<p>
-				My tool that I have developed was made in response to issues with accessibility within the PAC website
-			</p>
-		</Project>
-		<Project projectName = "Ipsum" projectLink = "https://google.com">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			</p>
-		</Project>
-		<Project projectName = "Ipsum" projectLink = "https://google.com">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			</p>
-		</Project>
-	</div>
+		<div class="full__three_column gap__3_rem">
+			<Project projectName = "DataSeekr" projectLink = "https://github.com/TaiHop/DataSeekr/tree/master">
+				<p>
+					My tool that I have developed was made in response to issues with accessibility within the PAC website
+				</p>
+			</Project>
+			<Project projectName = "Ipsum" projectLink = "https://google.com">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+			</Project>
+			<Project projectName = "Ipsum" projectLink = "https://google.com">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+			</Project>
+		</div>
+	</section>
+
 </BaseLayout>
 
