@@ -4,6 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Skill from '../components/Skill.astro';
 import Project from '../components/Project.astro';
 import AboutMe from '../components/AboutMe.astro';
+import Contact from "../components/Contact.astro";
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
@@ -11,7 +12,7 @@ import AboutMe from '../components/AboutMe.astro';
 	<AboutMe>
 		Hello! I'm Tai, a passionate programmer with a love for coding and problem-solving. I have experience in various programming languages and enjoy creating innovative solutions to real-world challenges. With a strong background in software development, I am always eager to learn new technologies and expand my skill set. I thrive in collaborative environments and am dedicated to delivering high-quality work.
 	</AboutMe>
-	<section>
+	<section id="skills">
 		<h2 style="text-align: center; margin-top: 30px;">
 			My Skills
 		</h2>
@@ -66,7 +67,7 @@ import AboutMe from '../components/AboutMe.astro';
 		</figure>
 	</div>	
 	
-	<section>
+	<section id="projects">
 		<h3 style="text-align: center;">
 			Projects
 		</h3>
@@ -90,5 +91,8 @@ import AboutMe from '../components/AboutMe.astro';
 		</div>
 	</section>
 
+	<Contact 
+		
+	/>
 </BaseLayout>
 
