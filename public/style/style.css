@@ -205,6 +205,7 @@ form {
     margin-top: auto;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+    background: var(--primary-color);
 }
 .contact-section button {
     display: block;
