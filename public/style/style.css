@@ -211,7 +211,7 @@ input:checked + .slider:before {
 }
 
 .slider-controls {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -224,7 +224,7 @@ input:checked + .slider:before {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: rgba(0,0,0,0.75);
+    background: rgba(252, 248, 248, 0.75);
     border: none;
     cursor: pointer;
     display: flex;
@@ -237,7 +237,7 @@ input:checked + .slider:before {
     content: "";
     border-style: solid;
     border-width: 0.6rem 0.8rem 0.6rem 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent white transparent transparent;    
 }
 
 /* RIGHT ARROW CUTOUT */
