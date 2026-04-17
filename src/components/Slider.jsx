@@ -29,7 +29,7 @@ const Slider = ({ slides }) => {
         <div className="image-slider">
             <ul className="slider-track">
                 {slides.map((slide, index) => (
-                    <li
+                    <div>
                         key={index}
                         className="slide"
                         style={{
@@ -47,7 +47,7 @@ const Slider = ({ slides }) => {
                                 View Project
                             </a>
                         </div>
-                    </li>
+                    </div>
                 ))}
             </ul>
 
