@@ -3,6 +3,7 @@ const pageTitle = "Tai P. Hopkins";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Skill from '../components/Skill.astro';
 import Project from '../components/Project.astro';
+import Projects from '../components/Projects.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Contact from "../components/Contact.astro";
 ---
@@ -72,21 +73,7 @@ import Contact from "../components/Contact.astro";
 		</h2>
 			
 		<div class="full__three_column gap__3_rem">
-			<Project projectName = "DataSeekr" projectLink = "https://github.com/TaiHop/DataSeekr/tree/master">
-				<p>
-					My tool that I have developed was made in response to issues with accessibility within the PAC website
-				</p>
-			</Project>
-			<Project projectName = "Ipsum" projectLink = "https://google.com">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</p>
-			</Project>
-			<Project projectName = "Ipsum" projectLink = "https://yahoo.com">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</p>
-			</Project>
+			<Projects />
 		</div>
 	</section>
 
