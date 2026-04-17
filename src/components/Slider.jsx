@@ -27,29 +27,27 @@ const Slider = ({ slides }) => {
 
     return (
         <div className="image-slider">
-            <ul className="slider-track">
+            <div className="slider-track">
                 {slides.map((slide, index) => (
-                    <li
-                        key={index}
-                        className="slide"
-                        style={{
-                            transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 3}rem))`
-                        }}
+                    <div 
+                        key = {index} 
+                        className="slide project-card"
+                                                style={{
+                        transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 3}rem))`
+                    }}
                     >
-                        <div className="project-card">
-                            <h3>{slide.name}</h3>
-                            <p>{slide.description}</p>
-                            <a
-                                href={slide.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Project
-                            </a>
-                        </div>
-                    </li>
+                        <h3>{slide.name}</h3>
+                        <p>{slide.description}</p>
+                        <a
+                            href={slide.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project
+                        </a>
+                    </div>
                 ))}
-            </ul>
+            </div>
 
             <div
                 className="image-slider-lr-toggle right-toggle fa-solid fa-circle-arrow-right"
