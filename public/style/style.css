@@ -22,7 +22,6 @@
 body {
     font-family: var(--font-family);
     background-color: var(--primary-color);
-    color: var(--third-color);
     padding: 20px;
 }
 
@@ -94,12 +93,6 @@ progress::-moz-progress-bar {
     margin: 0 auto;
 }
 
-/* KEEP REST SAME */
-
-.project.container {
-    background-color: var(--third-color);
-    color : var(--primary-color);
-}
 .project {
     border: var(--primary-color) solid 2px;
     border-radius: 8px;
@@ -108,24 +101,30 @@ progress::-moz-progress-bar {
     padding: 2rem;
     background-color: var(--third-color);
 }
-.project p,
-.project h2 {
+
+/* Target text inside project */
+.project p {
     color: var(--primary-color);
 }
-.project.header {
-    color : var(--primary-color);
+
+/* Specifically style the section title */
+.project h2 {
     text-align: center;
+    color: var(--primary-color);
 }
+
+/* Links */
 .project-link {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
 }
+
 .project-link-container {
     text-align: center;
-
 }
+
 .about-heading {
     color: var(--third-color);
     font-family: var(--font-family);
