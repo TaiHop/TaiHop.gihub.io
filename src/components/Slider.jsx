@@ -27,14 +27,25 @@ const Slider = ({ slides }) => {
 
     return (
         <div className="image-slider">
-            <div className="slider-track full__three_column gap___rem slides">
+
+            <div
+                className="image-slider-lr-toggle right-toggle fa-solid fa-circle-arrow-right"
+                onClick={slideImages}
+            ></div>
+
+            <div
+                className="image-slider-lr-toggle left-toggle fa-solid fa-circle-arrow-left"
+                onClick={slideImages}
+            ></div>
+
+            <div className="slider-track full__three_column">
                 {slides.map((slide, index) => (
                     <div 
                         key = {index} 
-                        className="slide project-card"
-                                                style={{
-                        transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 3}rem))`
-                    }}
+                        className= "slides gap__1rem"
+                        style={{
+                            transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 3}rem))`
+                        }}
                     >
                         <h3>{slide.name}</h3>
                         <p>{slide.description}</p>
@@ -48,15 +59,6 @@ const Slider = ({ slides }) => {
                     </div>
                 ))}
             </div>
-            <div
-                        className="image-slider-lr-toggle right-toggle fa-solid fa-circle-arrow-right"
-                        onClick={slideImages}
-                    ></div>
-
-                    <div
-                        className="image-slider-lr-toggle left-toggle fa-solid fa-circle-arrow-left"
-                        onClick={slideImages}
-                    ></div>
         </div>
     );
 };
