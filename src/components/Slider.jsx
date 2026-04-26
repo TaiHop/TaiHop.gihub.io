@@ -1,66 +1,72 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
 
-const Slider = ({ slides }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+const Slider = ({ slides = [] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const slideImages = (evt) => {
-        let button = evt.target.className;
+  if (!slides.length) {
+    return null;
+  }
 
-        if (button.includes("left") && currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        } else if (button.includes("right") && currentIndex < slides.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-        } else {
-            setCurrentIndex(0);
-        }
-    };
+  const previousSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
 
-    useEffect(() => {
-        // Optional auto-scroll
-        // const interval = setInterval(() => {
-        //     setCurrentIndex((prev) =>
-        //         prev === slides.length - 1 ? 0 : prev + 1
-        //     );
-        // }, 3000);
-        // return () => clearInterval(interval);
-    }, [slides.length]);
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
 
-    return (
-        <div className="image-slider">
+  return (
+    <section className="slider" aria-label="Project slider">
+      <button
+        type="button"
+        className="slider-button slider-button-left"
+        onClick={previousSlide}
+        aria-label="Previous project"
+      >
+        ‹
+      </button>
 
-            <div
-                className="image-slider-lr-toggle right-toggle fa-solid fa-circle-arrow-right"
-                onClick={slideImages}
-            ></div>
+      <div className="slider-window">
+        <div
+          className="slider-track"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {slides.map((slide) => (
+            <article className="slide" key={slide.name}>
+              <h3>{slide.name}</h3>
+              <p>{slide.description}</p>
 
-            <div
-                className="image-slider-lr-toggle left-toggle fa-solid fa-circle-arrow-left"
-                onClick={slideImages}
-            ></div>
-
-            <div className="slider-track full__three_column">
-                {slides.map((slide, index) => (
-                    <div 
-                        key = {index} 
-                        className= "slides gap__1rem"
-                        style={{
-                            transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 3}rem))`
-                        }}
-                    >
-                        <h3>{slide.name}</h3>
-                        <p>{slide.description}</p>
-                        <a
-                            href={slide.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            View Project
-                        </a>
-                    </div>
-                ))}
-            </div>
+              <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            </article>
+          ))}
         </div>
-    );
+      </div>
+
+      <button
+        type="button"
+        className="slider-button slider-button-right"
+        onClick={nextSlide}
+        aria-label="Next project"
+      >
+        ›
+      </button>
+
+      <div className="slider-dots" aria-label="Choose project">
+        {slides.map((slide, index) => (
+          <button
+            key={slide.name}
+            type="button"
+            className={`slider-dot ${index === currentIndex ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+            aria-label={`Go to ${slide.name}`}
+            aria-current={index === currentIndex ? "true" : undefined}
+          />
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Slider;

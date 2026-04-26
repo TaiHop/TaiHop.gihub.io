@@ -1,18 +1,23 @@
 ---
 import Slider from './Slider.jsx';
+
 const projects = [
     {
-        name: "Project 1",
-        description: "Lorem descriptum.",
-        link: "https://example.com"},
-    {
-        name: "Project 2", 
-        description: "Lorem also descriptum.",
-        link: "https://example.com"},
-    {
         name: "DataSeekr", 
-        description: "For this project, I am creating a scraping tool that collects its data directly from the PAC website. This makes the stats more accessible and easier to find. Initially, the project focuses on baseball, but it will be expanded to other sports later.",
-        link: "https://github.com/TaiHop/DataSeekr"},
-]
+        description: "A sports data scraping tool that collects stats directly from the PAC website, making baseball data easier to access and find. Planned expansion includes other sports.",
+        link: "https://github.com/TaiHop/DataSeekr"
+    },
+    {
+        name: "Project 2",
+        description: "Brief project description goes here.",
+        link: "https://example.com"
+    },
+    {
+        name: "Project 3", 
+        description: "Brief project description goes here.",
+        link: "https://example.com"
+    }
+];
 ---
+
 <Slider slides={projects} client:load />

@@ -1,17 +1,19 @@
 ---
-const profilePic = "/img/profile-pic.jpg";
+const profilePic = "/img/phd.jpg";
 ---
 
-<section class="full__three_column_img" id="about-me">
-  <div class="full__three_column gap__3_rem">
-    
-    <div class="span__2_col">
+<section class="about-section" id="about-me">
+  <div class="about-container">
+
+    <div class="about-text-container">
       <p class="about-text">
         <slot />
       </p>
     </div>
 
-    <img src={profilePic} alt="Profile Picture" class="profile-pic"/>
+    <div class="about-image-container">
+      <img src={profilePic} alt="Profile Picture" class="profile-pic"/>
+    </div>
 
   </div>
 </section>

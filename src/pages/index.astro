@@ -1,71 +1,31 @@
 ---
 const pageTitle = "Tai P. Hopkins";
+
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Skill from '../components/Skill.astro';
-import Projects from '../components/Projects.astro';
-import AboutMe from '../components/AboutMe.astro';
-import Contact from "../components/Contact.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import SkillsSlider from "../components/SkillsSlider.jsx";
 ---
-<BaseLayout pageTitle = {pageTitle}>
-    <!-- astro <slot /> -->
-	
-	<AboutMe>
-		Hello! I'm Tai, a passionate programmer with a love for coding and problem-solving. I have experience in various programming languages and enjoy creating innovative solutions to real-world challenges. With a strong background in software development, I am always eager to learn new technologies and expand my skill set. I thrive in collaborative environments and am dedicated to delivering high-quality work.
-	</AboutMe>
-	<section id="skills" class="viewport">
-		<h2 style="text-align: center; margin-top: 30px;">
-			My Skills
-		</h2>
-		<div class="skills-container">
-			<Skill 
-				img = "/img/python-html.png" 
-				alt = "Python logo" 
-				skill = "Python"
-				value = 70
-			/>
-			<Skill 
-				img = "/img/html-logo.jpg" 
-				alt = "HTML logo" 
-				skill = "HTML"
-				value = 50
-			/>
-			<Skill 
-				img = "/img/css-logo.jpg" 
-				alt = "CSS logo" 
-				skill = "CSS"
-				value = 75
-			/>
-			<Skill 
-				img = "/img/sqlite-icon.webp" 
-				alt = "SQLite logo" 
-				skill = "SQLite"
-				value = 72
-			/>
-			<Skill 
-				img = "/img/r-icon.webp" 
-				alt = "R logo" 
-				skill = "R"
-				value = 60
-			/>
-			<Skill 
-				img = "/img/c-icon.jpg" 
-				alt = "C logo" 
-				skill = "C"
-				value = 45
-			/>
-		</div>	
-	</section>
 
-	<section id="projects" class="project">
-		<h2 class="project header">
-			Projects
-		</h2>
-			
-		<div>
-			<Projects />
-		</div>
-	</section>
+<BaseLayout pageTitle={pageTitle}>
 
+    <!-- ABOUT SECTION -->
+    <AboutMe>
+        Hello! I'm Tai, a passionate programmer with a love for coding and problem-solving. 
+        I have experience in various programming languages and enjoy creating innovative 
+        solutions to real-world challenges. With a strong background in software development, 
+        I am always eager to learn new technologies and expand my skill set. I thrive in 
+        collaborative environments and am dedicated to delivering high-quality work.
+    </AboutMe>
+
+    <!-- SKILLS (NOW USING SLIDER COMPONENT) -->
+    <SkillsSlider client:load />
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <Projects />
+    </section>
 
 </BaseLayout>
 

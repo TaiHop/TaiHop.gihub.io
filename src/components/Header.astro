@@ -1,13 +1,16 @@
 ---
+import ThemeToggle from "./ThemeToggle.jsx";
 ---
+
 <header>
-    <strong>Tai Hopkins</strong>
-    <nav>
-        <aria-label = "Main Navigation">
-            <a href="#about-me">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </aria-label>
+    <strong class="logo">Tai Hopkins</strong>
+
+    <nav aria-label="Main Navigation">
+        <a href="#about-me">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+        <ThemeToggle client:load />
     </nav>
 </header>
