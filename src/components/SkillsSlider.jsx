@@ -10,10 +10,10 @@ const topSkills = [
 ];
 
 const bottomSkills = [
-  { img: "/img/cat.png", alt: "placeholder", skill: "Skill 7", value: 50 },
-  { img: "/img/cat.png", alt: "placeholder", skill: "Skill 8", value: 50 },
-  { img: "/img/cat.png", alt: "placeholder", skill: "Skill 9", value: 50 },
-  { img: "/img/cat.png", alt: "placeholder", skill: "Skill 10", value: 50 },
+  { img: "/img/cat.png", alt: "placeholder", skill: "p5Js", value: 75 },
+  { img: "/img/cat.png", alt: "placeholder", skill: "Adobe Photoshop", value: 50 },
+  { img: "/img/cat.png", alt: "placeholder", skill: "Adobe Illustrator", value: 50 },
+  { img: "/img/cat.png", alt: "placeholder", skill: "React", value: 25 },
   { img: "/img/cat.png", alt: "placeholder", skill: "Skill 11", value: 50 },
   { img: "/img/cat.png", alt: "placeholder", skill: "Skill 12", value: 50 },
   { img: "/img/cat.png", alt: "placeholder", skill: "Skill 13", value: 50 },
